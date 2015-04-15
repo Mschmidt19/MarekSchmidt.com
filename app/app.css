@@ -184,3 +184,52 @@ html, body {
     height: 33vw;
     overflow: auto;
 }
+
+
+
+#footer {
+    width: 100vw;
+    height: 3vw;
+    background-color: #ffffff;
+    bottom: 0;
+    position: fixed;
+}
+
+#footerText {
+    height: 3vw;
+    width: 25vw;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#footerText>p {
+    line-height: 1vw;
+    font-family: rodus2;
+    font-size: 1vw;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+
+#footerWhiteSpace {
+    height: 3vw;
+    width: 55vw;
+    display: inline-block;
+}
+
+#footerIconsDiv {
+    height: 3vw;
+    width: 20vw;
+    display: inline-block;
+}
+
+
+#footerIconsDiv>img {
+    height: 2vw;
+    width: 2vw;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+}
