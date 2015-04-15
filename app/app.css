@@ -1,0 +1,186 @@
+@font-face { font-family: homizio; src: url('fonts/homizio_nova/light.otf'); }
+@font-face { font-family: octopus; src: url('fonts/octopus/Octopus_Narrow_300.otf'); }
+@font-face { font-family: rodus; src: url('fonts/rodus/RODUSreg300.otf'); }
+@font-face { font-family: rodus2; src: url('fonts/rodus/RODUSround300.otf'); }
+@font-face { font-family: cotillion; src: url('fonts/cotillion/COTILLIO.ttf'); }
+@font-face { font-family: pacifico; src: url('fonts/pacifico/Pacifico.ttf'); }
+@font-face { font-family: learningCurve; src: url('fonts/learning_curve/LearningCurve_OT.otf'); }
+
+
+html, body {
+    margin:0;
+    padding:0;
+    height:400vh;
+    overflow-x: hidden;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 400vh;
+    min-height: 100%;
+}
+
+.homeContainer{
+    width: 100vw;
+    height: 33vw;
+    overflow: auto;
+    background-color: #017ba6;
+}
+
+.circle {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.oval {
+    -moz-border-radius: 50px / 100px;
+    -webkit-border-radius: 50px / 100px;
+    border-radius: 50px / 100px;
+}
+
+#portraitBackground {
+    background-color: #ffffff;
+    width: 23vw;
+    height: 23vw;
+    z-index: 2;
+    position: absolute;
+}
+
+.whiteContainer {
+    height: 23vw;
+    width: 92vw;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+#portrait {
+    width: 19vw;
+    height: 19vw;
+    position: relative;
+    left: 2vw;
+    top: 2vw;
+}
+
+#homeTextBackground {
+    background-color: #ffffff;
+    width: 87vw;
+    height: 17vw;
+    position: absolute;
+    left: 4vw;
+    top: 3vw;
+}
+
+
+#homeTextDiv {
+    width: 63vw;
+    height: 15vw;
+    margin: auto 5vw 1vw 20vw;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#homeText{
+    font-family: rodus2;
+    font-size: 1.1em;
+}
+
+#homeDownChevronDiv {
+    height: 3vw;
+    width: 3vw;
+    margin: 10vw 1vw 10vw 88vw;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    background: url(images/glyphiconspng/glyphicons-602-chevron-down.png) no-repeat center center;
+}
+
+#MarekSchmidt {
+    font-family: cotillion;
+    color: #ffffff;
+    font-size: 8vw;
+    margin-top: 2vh;
+    margin-left: 28vw;
+    margin-bottom: -5vw;
+}
+
+#MarekSchmidtContainer {
+    position: relative;
+
+}
+
+
+.menuDiv.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.menuDiv {
+    width: 100vw;
+    height: 5vw;
+    position: absolute;
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-left: -8px;
+}
+
+.menuItem {
+    width: 25vw;
+    height: 5vw;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.menuTextDiv {
+    height: 4vw;
+    margin:0;
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+}
+
+.menuTextDiv > p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vw;
+    margin: 0 auto 0 auto;
+    font-family: rodus2;
+    font-size: 2vw;
+    color: #000000;
+}
+
+.menuItemColor {
+    height: 1vw;
+    margin: 0;
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+
+}
+
+.blue {
+    background-color: #017BA6;
+}
+
+.yellow {
+    background-color: #FFB400;
+}
+
+.orange {
+    background-color: #FF2800;
+}
+
+.purple {
+    background-color: #8901AF;
+}
+
+.aboutContainer{
+    width: 100vw;
+    height: 33vw;
+    overflow: auto;
+}
