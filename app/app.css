@@ -23,7 +23,7 @@ html, body {
 .homeContainer{
     width: 100vw;
     height: 33vw;
-    overflow: auto;
+    overflow: hidden;
     background-color: #017ba6;
 }
 
@@ -70,7 +70,7 @@ html, body {
     height: 17vw;
     position: absolute;
     left: 4vw;
-    top: 3vw;
+    top: 5vw;
 }
 
 
@@ -104,13 +104,8 @@ html, body {
     color: #ffffff;
     font-size: 8vw;
     margin-top: 2vh;
-    margin-left: 28vw;
-    margin-bottom: -5vw;
-}
-
-#MarekSchmidtContainer {
-    position: relative;
-
+    margin-bottom: -7vw;
+    text-align: center;
 }
 
 
@@ -121,17 +116,14 @@ html, body {
 }
 
 .menuDiv {
-    width: 100vw;
     height: 5vw;
     position: absolute;
     margin-top: 0;
     overflow: hidden;
     background-color: #ffffff;
-    margin-left: -8px;
 }
 
 .menuItem {
-    width: 25vw;
     height: 5vw;
     margin: 0;
     display: inline-block;
@@ -207,7 +199,6 @@ html, body {
 
 #whoIs {
     margin-top: 10vw;
-    margin-left: 4vw;
     color: #ffffff;
     font-family: rodus2;
     font-size: 4vw;
