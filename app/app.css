@@ -85,7 +85,7 @@ html, body {
 }
 
 #homeText{
-    font-family: rodus2;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     font-size: 1.1em;
 }
 
@@ -150,7 +150,7 @@ html, body {
     vertical-align: middle;
     line-height: 4vw;
     margin: 0 auto 0 auto;
-    font-family: rodus2;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     font-size: 2vw;
     color: #000000;
 }
@@ -167,6 +167,22 @@ html, body {
     background-color: #017BA6;
 }
 
+.blue2 {
+    background-color: #02b2ec;
+}
+
+.blue3 {
+    background-color: #016383;
+}
+
+.blue4 {
+    background-color: #014b64;
+}
+
+.orangeComplement {
+    background-color: #FF8300;
+}
+
 .yellow {
     background-color: #FFB400;
 }
@@ -179,14 +195,48 @@ html, body {
     background-color: #8901AF;
 }
 
+
+/*ABOUT*/
 .aboutContainer{
     width: 100vw;
-    height: 33vw;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#whoIs {
+    margin-top: 10vw;
+    margin-left: 4vw;
+    color: #ffffff;
+    font-family: rodus2;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    line-height: 4vw;
+}
+
+.aboutCol {
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.col.span_8>p {
+    color: #000000;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: 18px;
+}
+
+#aboutBottomBlank {
+    margin-bottom: 4vw;
+
 }
 
 
 
+
+
+/*FOOTER*/
 #footer {
     width: 100vw;
     height: 3vw;
