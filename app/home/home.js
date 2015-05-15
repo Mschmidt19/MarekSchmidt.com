@@ -11,39 +11,54 @@ angular.module('myApp.home', ['ngRoute'])
 
 .controller('HomeCtrl', [function() {
 
-}]);
 
-
-
- /*   var menu = $('.menuDiv');
-
-    if (menu.length) {
-        var contentMenu = menu.offset().top;
-
-        $(window).scroll(function () {                  // assign scroll event listener
-
-            var currentScroll = $(window).scrollTop(); // get current position
-
-            if (currentScroll >= contentMenu) {           // apply position: fixed if you
-                alert("top");
-                $('.menuDiv').css({                      // scroll to that element or below it
-                    position: 'fixed',
-                    top: '0',
-                });
-            } else {                                   // apply position: static
-                $('.menuDiv').css({                      // if you scroll above it
-                    position: 'absolute'
-                });
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() >= $('.homeContainer').height()) {
+                $('.menuDiv').addClass('fixed');
+            } else {
+                $('.menuDiv').removeClass('fixed');
             }
-
         });
-    }
-*/
 
-$(window).on('scroll', function () {
-    if ($(window).scrollTop() >= $('.homeContainer').height()) {
-        $('.menuDiv').addClass('fixed');
-    } else {
-        $('.menuDiv').removeClass('fixed');
-    }
-});
+        $("#warSelector").hover(function(){
+            $('#warDescriptionDiv').toggleClass('hidden');
+        });
+
+        $("#gameShopSelector").hover(function(){
+            $('#gameShopDescriptionDiv').toggleClass('hidden');
+        });
+
+
+        $("#menuHomeButton").click(function(e){
+            $('html, body').animate({
+                scrollTop: $('.homeContainer').offset().top
+            }, 'slow');
+        });
+
+        $("#menuAboutButton").click(function(e){
+            $('html, body').animate({
+                scrollTop: $('.aboutContainer').offset().top + 1
+            }, 'slow');
+        });
+
+        $("#menuPortfolioButton").click(function(e){
+            $('html, body').animate({
+                scrollTop: $('.portfolioContainer').offset().top - $('.menuDiv').height() + 1
+            }, 'slow');
+        });
+
+        $("#menuContactButton").click(function(e){
+            $('html, body').animate({
+                scrollTop: $('.contactContainer').offset().top - $('.menuDiv').height() + 1
+            }, 'slow');
+        });
+
+
+
+
+    }]);
+
+
+
+
+

@@ -1,12 +1,17 @@
 <div class="mainContainer container">
 
     <div class="homeContainer blue">
+        <div class="wow fadeInDownBig">
             <p id="MarekSchmidt">Marek Schmidt</p>
+        </div>
         <div class="whiteContainer">
+            <div id="slideInCover">
+
+            </div>
             <div class="circle" id="portraitBackground">
                 <img class="circle" id="portrait" src="images/melinkedin.jpg" alt=""/>
             </div>
-            <div class="oval" id="homeTextBackground">
+            <div class="oval wow slideInLeft" id="homeTextBackground">
                 <div id="homeTextDiv">
                     <p id="homeText">Hello, my name is Marek Schmidt. I am a 21 year old Front End Web Developer and Graphic Designer living in Irvine,
                         California. With a background in Computer Engineering from the University of California, Santa Barbara, as well as
@@ -20,17 +25,18 @@
             <div id="homeDownChevronDiv"></div>
         </div>
     </div>
+
     <div class="menuDiv row col span_24"><!--
-            --><div class="menuItem">
+            --><div class="menuItem" id="menuHomeButton" ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'">
         <div class="menuTextDiv"><p>Home</p></div><div class="menuItemColor blue"></div>
     </div><!--
-            --><div class="menuItem">
+            --><div class="menuItem" id="menuAboutButton" ng-class="{'active2':selectedTab === 'about'}" ng-click="selectedTab = 'about'">
         <div class="menuTextDiv"><p>About</p></div><div class="menuItemColor blue2"></div>
     </div><!--
-            --><div class="menuItem">
+            --><div class="menuItem" id="menuPortfolioButton" ng-class="{'active3':selectedTab === 'portfolio'}" ng-click="selectedTab = 'portfolio'">
         <div class="menuTextDiv"><p>Portfolio</p></div><div class="menuItemColor blue3"></div>
     </div><!--
-            --><div class="menuItem">
+            --><div class="menuItem" id="menuContactButton" ng-class="{'active4':selectedTab === 'contact'}" ng-click="selectedTab = 'contact'">
         <div class="menuTextDiv"><p>Contact</p></div><div class="menuItemColor blue4"></div>
     </div><!--
         --></div>
@@ -38,14 +44,11 @@
 
     <div class="aboutContainer row blue2">
         <div id="aboutTopBlank" class="row"></div>
-        <!--<p id="whoIs" class="">Who is Marek Schmidt?</p>-->
-        <div class="col span_12 aboutCol"><p id="aboutCol1Title">Who is Marek Schmidt?</p><p>Technology enthusiast, avid learner, and one devilishly handsome young man (just kidding, but I’ll let you be the judge of that).
+        <div class="col span_12 aboutCol wow slideInLeft"><p id="aboutCol1Title">Who is Marek Schmidt?</p><p>Technology enthusiast, avid learner, and one devilishly handsome young man (just kidding, but I’ll let you be the judge of that).
             <br/><br/>
-            All my life I have had a great passion for technology. Growing up in a time where computers and devices are improving exponentially, there has always been something new or improved to marvel at - and there lies my motivation. Seeing all this action unfold before my eyes ignited the spark which has now turned into the fire which drives me today. In fact, when I was a wee little lad I would tell everyone that when I grew up, I wanted to be an “inventor”, with dreams of being a not-so-mad scientist inventing gadgets in a super high-tech lab. Once I matured a bit and realized how broad of a goal that truly was, I had to narrow down my dream to a more realistic specialization. I have always loved art and making something look beautiful, but that wasn’t exactly what I wanted. Thus I landed on computers. In my teens, I dabbled in all sorts of computer-related material: I convinced my mom to let me take summer game design classes while still in middle school, I created banner and signature images for people on forums just for fun, I built my first desktop at the age of fourteen, I became a board member of my first user group at age sixteen, and of a second at seventeen, and finally at eighteen, I was admitted to Honors Engineering in the field of Computer Engineering at University of California, Santa Barbara. Unfortunately, at this point things took a turn for the worse. I experienced a tremendous medical scare nearing the end of my freshman year, having to undergo emergency surgery and pending a diagnosis of lymphoma. In the end, this did turn out to be only a “scare”, however my health was compromised from the surgery, requiring absences which I could not recover from academically in such a rigorous program. I departed the university in 2014 and promptly embarked on some more soul-searching. Luckily, along with an immense amount of knowledge, my brief years at the university did give me the guidance and experience to help me determine that hardware was not where I belonged, but programming is what truly kept me going. I enrolled in a Full Stack Bootcamp called School of Devs and immediately found what I was searching for in the form of front-end web design. With this perfect synergy of development and design, I have finally found my calling. After all, it fits perfectly with what I’ve always wanted to do – create something amazing and visually stunning.</p></div>
-        <!--<div class="col span_8 aboutCol"><p>Nulla luctus posuere convallis. Donec nec iaculis massa. Maecenas et sapien sed arcu gravida imperdiet. Maecenas auctor ultricies quam, a iaculis libero vehicula id. Nullam at odio massa. Fusce eu lobortis quam. Aenean iaculis commodo velit, eu laoreet magna. Donec eu molestie tortor. Pellentesque eu venenatis leo. Proin rhoncus erat nec mi faucibus, sit amet euismod augue posuere.
-            <br/><br/>
-            Aenean nisi metus, blandit id feugiat eu, aliquet sed arcu. Donec aliquet quis felis vel condimentum. Nulla eu nisl condimentum, tristique orci eget, consectetur lectus. Aliquam erat volutpat. Nunc at congue enim. Sed volutpat facilisis lacus non molestie. Duis semper laoreet fringilla. Praesent elementum sit amet enim fermentum finibus. Fusce risus nisl, fringilla vitae felis a, tincidunt vulputate odio. Curabitur et efficitur magna. Nam erat velit, pulvinar id hendrerit sed, porttitor tristique ipsum. Phasellus facilisis quam lobortis justo condimentum mollis.</p></div>-->
-        <div class="col span_12 aboutCol">
+            All my life I have had a great passion for technology. Growing up in a time where computers and devices are improving exponentially, there has always been something new or improved to marvel at - and there lies my motivation. Seeing all this action unfold before my eyes ignited the spark which has now turned into the fire which drives me today. In fact, when I was a wee little lad I would tell everyone that when I grew up, I wanted to be an “inventor”, with dreams of being a not-so-mad scientist inventing gadgets in a super high-tech lab. Once I matured a bit and realized how broad of a goal that truly was, I had to narrow down my dream to a more realistic specialization. I have always loved art and making something look beautiful, but that wasn’t exactly what I wanted. Thus I landed on computers. In my teens, I dabbled in all sorts of computer-related material: I convinced my mom to let me take summer game design classes while still in middle school, I created banner and signature images for people on forums just for fun, I built my first desktop at the age of fourteen, I became a board member of my first user group at age sixteen, and of a second at seventeen, and finally at eighteen, I was admitted to Honors Engineering in the field of Computer Engineering at University of California, Santa Barbara. Unfortunately, at this point things took a turn for the worse. I experienced a tremendous medical scare nearing the end of my freshman year, having to undergo emergency surgery and pending a diagnosis of lymphoma. In the end, this did turn out to be only a “scare”, however my health was compromised from the surgery, requiring absences which I could not recover from academically in such a rigorous program. I departed the university in 2014 and promptly embarked on some more soul-searching. Luckily, along with an immense amount of knowledge, my brief years at the university did give me the guidance and experience to help me determine that hardware was not where I belonged, but programming is what truly kept me going. I enrolled in a Full Stack Bootcamp called School of Devs and immediately found what I was searching for in the form of front-end web design. With this perfect synergy of development and design, I have finally found my calling. After all, it fits perfectly with what I’ve always wanted to do – create something amazing and visually stunning.
+        </p></div>
+        <div class="col span_12 aboutCol wow slideInRight">
             <p id="aboutCol2Title">History</p>
             <p>Professional Experience</p>
             <p>Independent Contractor at INTERACT.AGENCY (2015 -Present)</p>
@@ -81,9 +84,60 @@
             <p>MEAN Stack Developer at School of Devs (2015-2015)</p>
             <p>Twelve week Full Stack Web Developer bootcamp to advance and refresh my technological competence.
                 Reviewed the following technologies: HTML5, CSS3, Javascript, Bootstrap, jQuery, JSON, Git, GitHub, AngularJS, MongoDB, Express, Node.js </p>
-
         </div>
     </div>
+
+    <div class="portfolioContainer row blue3">
+        <div class="col span_12 wow fadeIn">
+            <div>
+                <p id="portfolioTitle2">Example Projects</p>
+            </div>
+            <div id="portfolioMenuDiv">
+                <nav id="menu" class="menu">
+					<span class="morph-shape" data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
+						<svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
+                            <path d="M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z"/>
+                        </svg>
+					</span>
+                    <button class="trigger"><i class="fa fa-fw fa-share"></i><span>Share This</span></button>
+                    <ul class="menu__items">
+                        <li><a href="https://www.facebook.com/pages/Codrops/159107397912"><div id="warSelector" class="portfolioIcon"><img src="images/portfolioIcons/WarGameIcon2.png" alt=""/></div><span>War Card Game</span></a></li>
+                        <li><a href="http://feeds2.feedburner.com/tympanus"><div id="gameShopSelector" class="portfolioIcon"><img src="images/portfolioIcons/GameShopIcon.png" alt=""/></div><span>Online Game Shop</span></a></li>
+                        <li><a href="http://www.twitter.com/codrops"><div class="portfolioIconText"><img src="images/portfolioIcons/InProgress.png" alt=""/></div><span>Codrops on Twitter</span></a></li>
+                        <li><a href="https://plus.google.com/101095823814290637419"><div class="portfolioIconText"><img src="images/portfolioIcons/ComingSoon.png" alt=""/></div><span>Codrops on Google+</span></a></li>
+                        <li><a href="https://github.com/codrops"><div class="portfolioIconText"><img src="images/portfolioIcons/ComingSoon.png" alt=""/></div><span>Codrops on GitHub</span></a></li>
+                        <li><a href="http://www.pinterest.com/codrops/codrops/"><div class="portfolioIconText"><img src="images/portfolioIcons/ComingSoon.png" alt=""/></div><span>Codrops on Pinterest</span></a></li>
+                        <li><a href="https://www.tumblr.com/tagged/codrops"><div class="portfolioIconText"><img src="images/portfolioIcons/ComingSoon.png" alt=""/></div><span>Codrops on Tumblr</span></a></li>
+                        <li><a href="http://feedburner.google.com/fb/a/mailverify?uri=tympanus&loc=en_US"><div class="portfolioIconText"><img src="images/portfolioIcons/ComingSoon.png" alt=""/></div><span>Codrops RSS as Mail</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col span_12 wow fadeIn">
+            <p id="portfolioTitle2">Preview & Description</p>
+            <div class="previewDescriptionDiv hidden" id="warDescriptionDiv">
+                <iframe class="portfolioIFrame" scrolling="no" src="http://cat-bounce.com/"></iframe>
+                <p>My first project ever attempted. It was done in class so it is not 100% polished, as we were on a
+                    time constraint. The point of this project was to simulate the card game "War". In War, the deck is
+                    split evenly between two players, then each player flips over their top card. Whichever player has the higher
+                    card collects both cards and adds them to the bottom of his/her deck (in this case ace is 1, or the lowest card).
+                    in the case of a tie (or a "war"), three cards are placed face down and the fourth is flipped, playing with the
+                    same rules as usual, with the winner recieving all eight cards. </p>
+            </div>
+            <div class="previewDescriptionDiv hidden" id="gameShopDescriptionDiv">
+                <iframe class="portfolioIFrame" scrolling="no" src="http://www.sanger.dk/"></iframe>
+                <p>This was another project done in class, so again, it is not 100% polished. As I began to learn Angular as well as some
+                    beginning back end, I decided to test my skills by imitating an online game shop. The information for each of the
+                games is stored in Firebase and is being dynamically displayed through three-way data binding and ng-repeats. Unfortunately,
+                I tried to use one partial for all individual game pages which caused a problem with loading data when the left hand menu is not used.
+                In addition, I had not reached user authentication yet, so I made a dummy log in to simulate what the real one would look like. If a real
+                authentication had been implemented in time the issue with the cart emptying would also have been cleared </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contactContainer row blue4">
 
 
     <div id="footer"><!--
@@ -95,5 +149,46 @@
         --><img id="FooterFirstIcon" src="images/footerIcons/LinkedIn.png" alt="LinkedIn"/><img src="images/footerIcons/GitHub.png" alt="GitHub"/><img src="images/footerIcons/Twitter.png" alt="Twitter"/><img src="images/footerIcons/Email.png" alt="Email"/><img src="images/footerIcons/Resume.png" alt="Resumé"/><!--
     --></div><!--
     --></div>
+
+    <script src="home/classie.js"></script>
+    <script>
+        (function() {
+            function SVGMenu( el, options ) {
+                this.el = el;
+                this.init();
+            }
+            SVGMenu.prototype.init = function() {
+                this.trigger = this.el.querySelector( 'button.trigger' );
+                this.shapeEl = this.el.querySelector( 'span.morph-shape' );
+                var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+                this.pathEl = s.select( 'path' );
+                this.paths = {
+                    reset : this.pathEl.attr( 'd' ),
+                    active : this.shapeEl.getAttribute( 'data-morph-active' )
+                };
+                this.isOpen = false;
+                this.initEvents();
+            };
+            SVGMenu.prototype.initEvents = function() {
+                this.trigger.addEventListener( 'click', this.toggle.bind(this) );
+            };
+            SVGMenu.prototype.toggle = function() {
+                var self = this;
+                if( this.isOpen ) {
+                    classie.remove( this.el, 'menu--open' );
+                }
+                else {
+                    setTimeout( function() { classie.add( self.el, 'menu--open' ); }, 175 );
+                }
+
+                this.pathEl.stop().animate( { 'path' : this.paths.active }, 150, mina.easein, function() {
+                    self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );
+                } );
+                this.isOpen = !this.isOpen;
+            };
+            new SVGMenu( document.getElementById( 'menu' ) );
+        })();
+    </script>
+
 
 </div>

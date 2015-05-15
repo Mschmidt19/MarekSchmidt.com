@@ -1,0 +1,461 @@
+@font-face { font-family: homizio; src: url('../fonts/homizio_nova/light.otf'); }
+@font-face { font-family: octopus; src: url('../fonts/octopus/Octopus_Narrow_300.otf'); }
+@font-face { font-family: rodus; src: url('../fonts/rodus/RODUSreg300.otf'); }
+@font-face { font-family: rodus2; src: url('../fonts/rodus/RODUSround300.otf'); }
+@font-face { font-family: cotillion; src: url('../fonts/cotillion/COTILLIO.ttf'); }
+@font-face { font-family: pacifico; src: url('../fonts/pacifico/Pacifico.ttf'); }
+@font-face { font-family: learningCurve; src: url('../fonts/learning_curve/LearningCurve_OT.otf'); }
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+    margin:0;
+    padding:0;
+    height:auto;
+    overflow-x: hidden;
+}
+
+
+.mainContainer{
+    width: 100vw;
+    min-height: 100%;
+    height: auto;
+}
+
+.homeContainer{
+    width: 100vw;
+    height: 33vw;
+    overflow: hidden;
+}
+
+.circle {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.oval {
+    -moz-border-radius: 50px / 100px;
+    -webkit-border-radius: 50px / 100px;
+    border-radius: 50px / 100px;
+}
+
+#portraitBackground {
+    background-color: #ffffff;
+    width: 23vw;
+    height: 23vw;
+    z-index: 2;
+    position: absolute;
+}
+
+#slideInCover {
+    height: 23vw;
+    width: 18vw;
+    position: absolute;
+    background-color: #017ba6;
+    margin-left: -4vw;
+    z-index: 2;
+}
+
+.whiteContainer {
+    height: 23vw;
+    width: 92vw;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+#portrait {
+    width: 19vw;
+    height: 19vw;
+    position: relative;
+    left: 2vw;
+    top: 2vw;
+}
+
+#homeTextBackground {
+    background-color: #ffffff;
+    width: 87vw;
+    height: 17vw;
+    position: absolute;
+    left: 4vw;
+    top: 5vw;
+}
+
+
+#homeTextDiv {
+    width: 63vw;
+    height: 15vw;
+    margin: auto 5vw 1vw 20vw;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#homeText{
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: 1.1em;
+}
+
+#homeDownChevronDiv {
+    height: 3vw;
+    width: 3vw;
+    margin: 10vw 1vw 10vw 88vw;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    background: url(../images/glyphiconspng/glyphicons-602-chevron-down.png) no-repeat center center;
+}
+
+#MarekSchmidt {
+    font-family: cotillion;
+    color: #ffffff;
+    font-size: 8vw;
+    margin-top: 2vh;
+    margin-bottom: -7vw;
+    text-align: center;
+}
+
+
+.menuDiv.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.menuDiv {
+    height: auto;
+    position: absolute;
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+.menuItem {
+    height: 5vw;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+
+}
+
+.menuItem:hover .menuTextDiv>p {
+    color: #da7071;
+}
+
+.active {
+    background-color: #017BA6;
+}
+
+.active2 {
+    background-color: #02b2ec;
+}
+
+.active3 {
+    background-color: #016383;
+}
+
+.active4 {
+    background-color: #014b64;
+}
+
+
+
+.menuTextDiv {
+    height: 4vw;
+    margin:0;
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+}
+
+.menuTextDiv > p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vw;
+    margin: 0 auto 0 auto;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: 2vw;
+    color: #000000;
+}
+
+.menuItemColor {
+    height: 1vw;
+    margin: 0;
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+
+}
+
+.blue {
+    background-color: #017BA6;
+}
+
+.blue2 {
+    background-color: #02b2ec;
+}
+
+.blue3 {
+    background-color: #016383;
+}
+
+.blue4 {
+    background-color: #014b64;
+}
+
+.orangeComplement {
+    background-color: #FF8300;
+}
+
+.yellow {
+    background-color: #FFB400;
+}
+
+.orange {
+    background-color: #FF2800;
+}
+
+.purple {
+    background-color: #8901AF;
+}
+
+
+/*ABOUT*/
+.aboutContainer{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+
+
+.aboutCol {
+    padding-top: 0;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+#aboutCol1Title {
+    text-align: center;
+    font-family: rodus2;
+    font-size: 46px;
+    color: #ffffff;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#aboutCol2Title {
+    text-align: center;
+    font-family: rodus2;
+    font-size: 46px;
+    color: #ffffff;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.col.span_12>p {
+    color: #000000;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: 18px;
+}
+
+.col.span_14>p {
+    color: #000000;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-size: 18px;
+}
+
+#resumeImage {
+    width: 100%;
+    height: auto;
+}
+
+#aboutBottomBlank {
+    margin-bottom: 4vw;
+
+}
+#aboutTopBlank {
+    margin-bottom: 9vw;
+
+}
+
+
+
+/*PORTFOLIO*/
+.portfolioContainer{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    min-height: 48vw;
+}
+
+
+#portfolioMenuDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#portfolioTitle {
+    text-align: center;
+    font-family: rodus2;
+    font-size: 46px;
+    color: #ffffff;
+    line-height: 42px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#portfolioTitle2 {
+    text-align: center;
+    font-family: rodus2;
+    font-size: 46px;
+    color: #ffffff;
+    line-height: 42px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.portfolioIcon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.portfolioIcon>img {
+    max-height: 40px;
+    max-width: 40px;
+    height: auto;
+    width: auto;
+}
+
+.portfolioIcon>p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.portfolioIconText {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.portfolioIconText>img {
+    max-height: 50px;
+    max-width: 50px;
+    height: auto;
+    width: auto;
+}
+
+.portfolioIFrame {
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.previewDescriptionDiv {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    visibility: visible;
+}
+
+.previewDescriptionDiv>p {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+
+/*CONTACT*/
+
+.contactContainer {
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+
+
+
+
+/*FOOTER*/
+#footer {
+    width: 100vw;
+    height: 3vw;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+#footerText {
+    height: 3vw;
+    width: 25vw;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#footerText>p {
+    line-height: 1vw;
+    font-family: rodus2;
+    font-size: 1vw;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+
+#footerWhiteSpace {
+    height: 3vw;
+    width: 55vw;
+    display: inline-block;
+}
+
+#footerIconsDiv {
+    height: 3vw;
+    width: 20vw;
+    display: inline-block;
+}
+
+
+#footerIconsDiv>img {
+    height: 2vw;
+    width: 2vw;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+}
